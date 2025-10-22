@@ -10,8 +10,8 @@ from dvc.exceptions import (
     PathMissingError,
 )
 from dvc.testing.test_api import TestAPI  # noqa, pylint: disable=unused-import
+from dvc.testing.tmp_dir import make_subrepo
 from dvc.utils.fs import remove
-from tests.unit.fs.test_dvc import make_subrepo
 
 
 def test_get_url_external(tmp_dir, erepo_dir, cloud):
